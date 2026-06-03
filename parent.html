@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Parent Portal | Ozone RMS</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="dash-sidebar">
+            <div class="sidebar-brand">
+                <h2>OZONE <span>RMS</span></h2>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="#" class="menu-item active">
+                    <span class="menu-icon">🏡</span> Family Overview
+                </a>
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">📊</span> Academic Progress
+                </a>
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">📅</span> Attendance & Logs
+                </a>
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">📅</span> Calendar
+                </a>
+                <a href="#" class="menu-item chat-menu-badge">
+                    <span class="menu-icon">💬</span> Administrative Chat <span class="notification-count">1</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn"><span>🚪</span> Sign Out</a>
+            </div>
+        </aside>
+
+        <main class="dash-main-content">
+            <header class="dash-header">
+                <div class="header-status-info">
+                    <span class="family-pill">Parent Account: Abrham Family</span>
+                </div>
+                <div class="student-profile">
+                    <div class="student-info">
+                        <span class="student-name">Robert Mercer</span>
+                        <span class="student-id">Student: Alex Mercer (Gr. 11)</span>
+                    </div>
+                    <div class="parent-avatar">RMS</div>
+                </div>
+            </header>
+
+            <section class="dash-welcome">
+                <h1>Welcome, Robert</h1>
+                <p>Monitor your child's real-time grades, manage personal profiles, and chat with administration.</p>
+            </section>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">Alex's Term GPA</span>
+                        <span class="metric-badge up">Honor Roll</span>
+                    </div>
+                    <div class="metric-value">3.84</div>
+                    <div class="metric-footer">Standing: Top 10% of Class</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">Attendance Index</span>
+                        <span class="metric-badge secure">Excellent</span>
+                    </div>
+                    <div class="metric-value">98.2%</div>
+                    <div class="metric-footer">Total days missed: 2 days</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">Outstanding Fees</span>
+                        <span class="metric-badge stable">Paid</span>
+                    </div>
+                    <div class="metric-value">$0.00</div>
+                    <div class="metric-footer">Spring statement cleared</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">Next School Event</span>
+                        <span class="metric-badge warning">Calendar</span>
+                    </div>
+                    <div class="metric-value">May 28</div>
+                    <div class="metric-footer">Parent-Teacher Conferences</div>
+                </div>
+            </section>
+
+            <section class="dash-middle-row">
+                <div class="table-section-card results-card">
+                    <div class="section-card-header">
+                        <h3>📋 Student Grade Performance Report</h3>
+                        <span class="term-label">Term 2 (2026)</span>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="dash-table">
+                            <thead>
+                                <tr>
+                                    <th>Subject Course</th>
+                                    <th>Teacher</th>
+                                    <th>Grade Metric</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>AP Computer Science</strong></td>
+                                    <td>Mr. Davis</td>
+                                    <td><span class="grade-pill high">A (96%)</span></td>
+                                    <td>Passed</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Advanced Calculus</strong></td>
+                                    <td>Mrs. Harrison</td>
+                                    <td><span class="grade-pill mid">B+ (88%)</span></td>
+                                    <td>Passed</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Physics Honors</strong></td>
+                                    <td>Dr. Sterling</td>
+                                    <td><span class="grade-pill high">A (94%)</span></td>
+                                    <td>Passed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="profile-summary-sidebar">
+                    <div class="mini-profile-card">
+                        <div class="card-accent-line"></div>
+                        <h4>Family Profile Data</h4>
+                        <div class="profile-info-item">
+                            <span class="info-label">Parent/Guardian:</span>
+                            <span class="info-value">Robert Mercer</span>
+                        </div>
+                        <div class="profile-info-item">
+                            <span class="info-label">Email Node:</span>
+                            <span class="info-value">r.mercer@mail.com</span>
+                        </div>
+                        <hr class="profile-divider" />
+                        <div class="profile-info-item">
+                            <span class="info-label">Linked Student:</span>
+                            <span class="info-value">Alex Mercer</span>
+                        </div>
+                        <div class="profile-info-item">
+                            <span class="info-label">Class Cohort:</span>
+                            <span class="info-value">Grade 11 - Room 302</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="dash-data-split parent-layout-split">
+                <section class="messenger-section-card">
+                    <div class="section-card-header chat-header-border">
+                        <div class="chat-target-meta">
+                            <h3>Message School Administration</h3>
+                            <p class="status-online"><span class="online-dot"></span> Admin Desk (Typically replies in minutes)</p>
+                        </div>
+                    </div>
+
+                    <div class="chat-message-display-box">
+                        <div class="message-bubble admin-msg">
+                            <div class="msg-avatar">AD</div>
+                            <div class="msg-content-wrapper">
+                                <span class="msg-author">Admin Desk (Sarah)</span>
+                                <p class="msg-text">Hello Mr. Mercer, we have approved Alex's field trip waiver request form. Please let us know if you need anything else!</p>
+                                <span class="msg-time">10:24 AM</span>
+                            </div>
+                        </div>
+
+                        <div class="message-bubble parent-msg">
+                            <div class="msg-content-wrapper">
+                                <p class="msg-text">Thank you so much Sarah! I also wanted to check if his updated medical records were processed by the health office?</p>
+                                <span class="msg-time">11:15 AM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="chat-input-bar" onsubmit="event.preventDefault();">
+                        <input type="text" placeholder="Type a secure message to the admin desk...">
+                        <button type="submit" class="chat-send-btn">Send ➔</button>
+                    </form>
+                </section>
+
+                <section class="table-section-card">
+                    <div class="section-card-header">
+                        <h3>Recent Updates for Alex</h3>
+                    </div>
+                    <div class="notification-list-stack">
+                        <div class="notif-item">
+                            <span class="notif-icon grade">📝</span>
+                            <div class="notif-details">
+                                <h4>New Grade Posted</h4>
+                                <p>Alex received an <strong>A (96%)</strong> in AP Computer Science on Assignment 4.</p>
+                                <span class="notif-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="notif-item">
+                            <span class="notif-icon system">🔔</span>
+                            <div class="notif-details">
+                                <h4>Report Card Issued</h4>
+                                <p>Midterm performance summaries are now available to download.</p>
+                                <span class="notif-time">Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard | Ozone RMS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <aside class="dash-sidebar">
+            <div class="sidebar-brand">
+                <h2>OZONE <span>RMS</span></h2>
+            </div>
+            <nav class="sidebar-menu">
+                <a href="admin.php" class="menu-item active">
+                    <span class="menu-icon">📊</span> Dashboard
+                </a>
+                <a href="student_records.php" class="menu-item">
+                    <span class="menu-icon">🎓</span> Student Records
+                </a>
+                <a href="admin_contact_messages.php" class="menu-item">
+                    <span class="menu-icon">📧</span> Contact Messages
+                </a>
+                <a href="enroll_student.php" class="menu-item">
+                    <span class="menu-icon">📋</span> Admissions
+                </a>
+                <a href="Staff.php" class="menu-item">
+                    <span class="menu-icon">👥</span> Staff Directory
+                </a>
+                <a href="admin_settings.php" class="menu-item">
+                    <span class="menu-icon">⚙️</span> Settings
+                </a>
+
+
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="logout-btn"><span>🚪</span> Logout</a>
+                
+            </div>
+        </aside>
+
+        <main class="dash-main-content">
+            <header class="dash-header">
+                <div class="header-search">
+                    <span class="search-icon">🔍</span>
+                    <input type="search" placeholder="Search records, students, or staff...">
+                </div>
+                <div class="admin-profile">
+                    <div class="admin-info">
+                        <span class="admin-name">Administrator</span>
+                        <span class="admin-role">Super Admin</span>
+                    </div>
+                    <div class="admin-avatar">RMS</div>
+                </div>
+            </header>
+
+            <section class="dash-welcome">
+                <h1>Welcome Back, Admin</h1>
+                <p>System operational status is normal. Here is your institutional snapshot for today.</p>
+            </section>
+
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">Total Students</span>
+                        <span class="metric-badge up">▲ 12%</span>
+                    </div>
+                    <div class="metric-value">1,248</div>
+                    <div class="metric-footer">Active enrollment this term</div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">Attendance Rate</span>
+                        <span class="metric-badge stable">Stable</span>
+                    </div>
+                    <div class="metric-value">96.4%</div>
+                    <div class="metric-footer">Daily average aggregate</div>
+                </div>
+
+                <!--<div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">Pending Applications</span>
+                        <span class="metric-badge warning">Action Required</span>
+                    </div>
+                    <div class="metric-value">34</div>
+                    <div class="metric-footer">Requires verification review</div>
+                </div>-->
+
+                <div class="metric-card">
+                    <div class="metric-header">
+                        <span class="metric-title">System Health</span>
+                        <span class="metric-badge secure">AES-256</span>
+                    </div>
+                    <div class="metric-value">100%</div>
+                    <div class="metric-footer">All synchronization nodes live</div>
+                </div>
+            </section>
+
+            <div class="dash-data-split">
+                <section class="table-section-card">
+                    <div class="section-card-header">
+                        <h3>Recent Record Updates</h3>
+                        <a href="#" class="view-all-link">View All</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="dash-table">
+                            <thead>
+                                <tr>
+                                    <th>Student</th>
+                                    <th>ID</th>
+                                    <th>Update Type</th>
+                                    <th>Timestamp</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Abebe Zenebu</strong></td>
+                                    <td>OZ-2026-88</td>
+                                    <td>Transcript Upload</td>
+                                    <td>Just Now</td>
+                                    <td><span class="status-pill verified">Verified</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Mulunesh Bekele</strong></td>
+                                    <td>OZ-2026-12</td>
+                                    <td>Medical Waiver</td>
+                                    <td>14 mins ago</td>
+                                    <td><span class="status-pill pending">Pending Review</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Kebede Lemma</strong></td>
+                                    <td>OZ-2026-45</td>
+                                    <td>Attendance Log</td>
+                                    <td>2 hours ago</td>
+                                    <td><span class="status-pill verified">Verified</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="actions-section-card">
+                    <div class="section-card-header">
+                        <h3>Quick Controls</h3>
+                    </div>
+                    <div class="actions-button-stack">
+                        <button class="action-btn-primary">➕ Enroll New Student</button>
+                        <button class="action-btn-secondary">📝 Generate Term Report</button>
+                        <button class="action-btn-secondary">⚠️ Review Pending Applications</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

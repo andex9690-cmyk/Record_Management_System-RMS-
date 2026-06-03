@@ -1,0 +1,69 @@
+/* Dashboard Colors - Day Mode */
+:root {
+    --dashboard-bg: #FFFAFA; /* Snow */
+    --dashboard-surface: #F8F8FF; /* GhostWhite */
+    --dashboard-muted: #D3D3D3; /* Light Gray */
+    --dashboard-ivory: #FFFFF0; /* Ivory */
+    --dashboard-accent: #F0F8FF; /* Alice Blue */
+    --dashboard-text: #002147; /* deep text for day */
+    --dashboard-sidebar-bg: #F8F8FF;
+    --dashboard-card-bg: #ffffff;
+    --dashboard-card-border: #e6e6e6;
+}
+
+/* Dashboard Colors - Night Mode */
+[data-theme="dark"] {
+    --dashboard-bg: #191970; /* Midnight Blue */
+    --dashboard-surface: #000080; /* Navy Blue */
+    --dashboard-muted: #36454F; /* Charcoal */
+    --dashboard-border: #708090; /* Slate Gray */
+    --dashboard-accent: #483D8B; /* Dark Slate Blue */
+    --dashboard-gunmetal: rgba(42,52,57,0.6); /* Gunmetal */
+    --dashboard-onyx: #353839; /* Onyx */
+    --dashboard-text: #e6eef8;
+    --dashboard-card-bg: #0f1722;
+    --dashboard-card-border: rgba(255,255,255,0.06);
+}
+
+/* Dashboard Themed Elements */
+.dashboard-body {
+    background: var(--dashboard-bg);
+    color: var(--dashboard-text);
+}
+
+.dash-sidebar {
+    background: var(--dashboard-surface);
+    color: var(--dashboard-text);
+    border-right: 1px solid var(--dashboard-card-border);
+}
+
+.sidebar-brand span { color: var(--dashboard-accent); }
+
+.menu-item { color: var(--dashboard-muted); }
+
+.menu-item:hover, .menu-item.active { background: rgba(255,255,255,0.03); color: var(--dashboard-text); }
+
+.metric-card, .table-section-card, .actions-section-card {
+    background: var(--dashboard-card-bg);
+    border-color: var(--dashboard-card-border);
+    color: var(--dashboard-text);
+    box-shadow: var(--shadow-sm);
+}
+
+.metric-title, .dash-welcome p { color: var(--dashboard-muted); }
+
+.dash-table th { color: var(--dashboard-muted); border-bottom-color: var(--dashboard-card-border); }
+.dash-table td { border-bottom-color: var(--dashboard-card-border); }
+
+.view-all-link { color: var(--dashboard-accent); }
+.view-all-link:hover { color: var(--accent-hover); }
+
+.admin-avatar { background: var(--dashboard-accent); color: var(--dashboard-card-bg); }
+
+.metric-badge.up { background: #dcfce7; color: #065f46; }
+.metric-badge.warning { background: #fff4e6; color: #92400e; }
+.metric-badge.secure { background: #dbeafe; color: #1e40af; }
+
+.header-search input { background: var(--dashboard-card-bg); border-color: var(--dashboard-card-border); color: var(--dashboard-text); }
+
+.admin-role { color: var(--dashboard-muted); }

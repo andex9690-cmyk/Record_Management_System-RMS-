@@ -1,0 +1,249 @@
+================================================================================
+OZONE RMS - SETUP GUIDE
+================================================================================
+
+STEP-BY-STEP INSTALLATION INSTRUCTIONS
+
+================================================================================
+PREREQUISITES
+================================================================================
+
+✓ XAMPP installed and running (Apache + MySQL)
+✓ Files placed in: C:\xampp\htdocs\it's rms\
+✓ MySQL running and accessible
+✓ Modern web browser
+
+================================================================================
+INSTALLATION STEPS
+================================================================================
+
+STEP 1: Start XAMPP Services
+────────────────────────────
+1. Open XAMPP Control Panel
+2. Start Apache service
+3. Start MySQL service
+4. Both should show "Running" status
+
+STEP 2: Initialize Database
+────────────────────────────
+1. Open your web browser
+2. Go to: http://localhost/it's rms/setup_database.php
+3. Wait for all tables to be created
+4. You should see confirmation messages
+
+Note: If you get connection errors, verify MySQL is running and credentials
+in db.php match your XAMPP setup.
+
+STEP 3: Access the Application
+──────────────────────────────
+1. Home Page: http://localhost/it's rms/index.html
+2. Login: http://localhost/it's rms/login.php
+3. Register: http://localhost/it's rms/register.html
+
+STEP 4: Test with Demo Credentials
+───────────────────────────────────
+
+ADMIN LOGIN:
+  - Go to: http://localhost/it's rms/login.php
+  - Username: admin
+  - Password: admin123
+  - Role: Admin
+  - Click "Sign In"
+  - You should see the Admin Dashboard
+
+STUDENT LOGIN:
+  - Go to: http://localhost/it's rms/login.php
+  - Username: student1
+  - Password: student123
+  - Role: Student
+  - Click "Sign In"
+  - You should see the Student Dashboard
+
+PARENT LOGIN:
+  - Go to: http://localhost/it's rms/login.php
+  - Username: parent1
+  - Password: parent123
+  - Role: Parent
+  - Click "Sign In"
+  - You should see the Parent Dashboard
+
+================================================================================
+DATABASE INFORMATION
+================================================================================
+
+Database Name: ozone_rms
+
+Tables Created:
+  1. users - Stores user accounts and credentials
+  2. students - Stores student information
+  3. contact_messages - Stores contact form submissions
+
+Default Credentials (Auto-created):
+  - Admin: admin / admin123
+  - Student: student1 / student123
+  - Parent: parent1 / parent123
+
+================================================================================
+FILE STRUCTURE
+================================================================================
+
+Public Pages:
+  - index.html (or Home.html) ........... Home page
+  - About.html .......................... About page
+  - Staff.html .......................... Staff directory
+  - contact.php ......................... Contact form
+
+Authentication:
+  - login.html .......................... Login page template
+  - login.php ........................... Login processor
+  - register.html ....................... Registration page
+  - register.php ........................ Registration processor
+  - logout.php .......................... Logout handler
+
+Dashboards:
+  - admin.php ........................... Admin dashboard
+  - student.php ......................... Student dashboard
+  - parent.php .......................... Parent dashboard
+
+Configuration:
+  - db.php ............................. Database connection (MAIN CONFIG)
+  - setup_database.php ................. Database initialization
+  - styles.css ......................... CSS stylesheet
+
+Utilities:
+  - info.php ........................... System information page
+  - README.md .......................... Full documentation
+
+================================================================================
+DATABASE CONFIGURATION
+================================================================================
+
+Location: db.php
+
+Current Settings:
+  $host = 'localhost'
+  $db_user = 'root'
+  $db_password = ''  (empty by default in XAMPP)
+  $db_name = 'ozone_rms'
+
+If your XAMPP setup differs, edit these values in db.php
+
+================================================================================
+SECURITY FEATURES
+================================================================================
+
+✓ Prepared Statements (prevents SQL injection)
+✓ Password Hashing (bcrypt algorithm)
+✓ Session Management (user tracking)
+✓ Input Validation (prevents invalid data)
+✓ HTML Entity Encoding (prevents XSS)
+✓ Role-Based Access Control (different user permissions)
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+ISSUE: "Connection failed" when accessing setup_database.php
+────────────────────────────────────────────────────────────
+Solution:
+  1. Verify MySQL is running in XAMPP Control Panel
+  2. Check that port 3306 is available
+  3. Verify db.php has correct credentials
+  4. Try again
+
+ISSUE: Database already exists error during setup
+──────────────────────────────────────────────────
+Solution:
+  This is normal. Database already created. Proceed to login.
+
+ISSUE: Cannot login with demo credentials
+──────────────────────────────────────────
+Solution:
+  1. Run setup_database.php again
+  2. Check database was initialized: http://localhost/it's rms/info.php
+  3. Verify correct role is selected during login
+  4. Clear browser cookies and try again
+
+ISSUE: Contact form not working
+───────────────────────────────
+Solution:
+  1. Check contact_messages table exists: info.php
+  2. Verify database connection is working
+  3. Check form is using POST method
+  4. Review error messages on contact.php
+
+ISSUE: Can't access any pages
+─────────────────────────────
+Solution:
+  1. Verify Apache is running
+  2. Check file path: C:\xampp\htdocs\it's rms\
+  3. Try accessing: http://localhost/it's rms/index.html
+  4. Check browser console for errors (F12)
+
+================================================================================
+QUICK TESTING CHECKLIST
+================================================================================
+
+□ Database initialized successfully (setup_database.php)
+□ Can access home page (index.html)
+□ Can view About page (About.html)
+□ Can view Staff page (Staff.html)
+□ Can view Contact page (contact.php)
+□ Can login as admin (admin/admin123)
+□ Can see admin dashboard
+□ Can logout successfully
+□ Can login as student (student1/student123)
+□ Can see student dashboard
+□ Can login as parent (parent1/parent123)
+□ Can see parent dashboard
+□ Contact form submits successfully
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After successful setup:
+
+1. Change Demo Passwords:
+   - Consider updating demo user passwords for security
+   - Use register.php to create new accounts if needed
+
+2. Customize Content:
+   - Edit About.html with school information
+   - Update Staff.html with actual staff details
+   - Modify contact.php email settings
+
+3. Add Data:
+   - Use admin dashboard to add students
+   - Create parent accounts and link to students
+   - Add grades and attendance records
+
+4. Test All Features:
+   - Verify all dashboards load correctly
+   - Test form submissions
+   - Check navigation links
+
+================================================================================
+USEFUL LINKS
+================================================================================
+
+Home:              http://localhost/it's rms/index.html
+Login:             http://localhost/it's rms/login.php
+System Info:       http://localhost/it's rms/info.php
+Database Setup:    http://localhost/it's rms/setup_database.php
+About:             http://localhost/it's rms/About.html
+Contact:           http://localhost/it's rms/contact.php
+
+================================================================================
+SUPPORT
+================================================================================
+
+For issues or questions:
+Email: ozonehighschool2@gmail.com
+Phone: +251 953462733
+
+Database Name: ozone_rms
+Version: 1.0
+Last Updated: May 22, 2026
+
+================================================================================

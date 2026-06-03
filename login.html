@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login | Ozone RMS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo">Record <span>Management System</span></h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="About.html">About Us</a>
+                <a href="Staff.html">Staff</a>
+                <a href="contact.php">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="auth-section">
+            <div class="auth-box">
+                <div class="info-card">
+                    <form id="login-form" class="auth-form" action="login.php" method="POST">
+                        <h2>Login to RMS</h2>
+
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Enter username" required />
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter password" required />
+                        </div>
+                        
+                        <div class="input-group">
+                            <label for="role">Select Role</label>
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>Select Role</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Parent">Parent</option>
+                                <option value="Student">Student</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Login</button>
+                        <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem;">
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+        <script src="theme.js"></script>
+    </body>
+    </html>

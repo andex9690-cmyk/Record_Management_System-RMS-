@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Ozone High School</title>
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+
+           <h1 class="logo">Record <span>Management System </span></h1>
+
+            <nav class="main-nav">
+
+                <a href="Home.html">Home</a> 
+                <a href="About.html">About Us</a>
+
+                <!--<div class="dropdown">
+
+                    <a href="Admissions.html" class="dropbtn">
+                        Admissions
+                    </a>
+
+                    <div class="dropdown-content">
+
+                        <a href="Admissions.html#apply">Apply Now</a>
+                        <a href="Admissions.html#requirements">Requirements</a>
+                        <a href="Admissions.html#tuition">Tuition & Fees</a>
+
+                    </div>
+
+                </div>
+
+                <a href="Academic.html">Academics</a>-->
+                <a href="Staff.html">Staff</a> 
+                <!-- <a href="Contact.html" class="active">Contact Us</a> -->
+
+            </nav>
+
+        </div>
+    </header>
+    <div class="contact-page-container">
+    <div class="contact-hero-section">
+        <h2>Contact Us</h2>
+        <p>We value open communication with our students, parents, and community members. If you have any questions, feedback, or inquiries, please feel free to reach out using the information below or send us a message through the contact form.</p>
+    </div>
+
+    <div class="contact-grid-wrapper">
+        <!-- Left Side: Interactive School Information Card -->
+        <section class="info-side-card">
+            <div class="card-accent-header"></div>
+            <h3>School Information</h3>
+            
+            <div class="info-list-stack">
+                <div class="info-row-item">
+                    <span class="info-icon">🏫</span>
+                    <div class="info-text">
+                        <label>School Name</label>
+                        <p>Ozone High School</p>
+                    </div>
+                </div>
+                <div class="info-row-item">
+                    <span class="info-icon">📍</span>
+                    <div class="info-text">
+                        <label>Location</label>
+                        <p>Gedera, Addis Ababa, Ethiopia</p>
+                    </div>
+                </div>
+                <div class="info-row-item">
+                    <span class="info-icon">📞</span>
+                    <div class="info-text">
+                        <label>Phone</label>
+                        <p>+251 953462733</p>
+                    </div>
+                </div>
+                <div class="info-row-item">
+                    <span class="info-icon">✉️</span>
+                    <div class="info-text">
+                        <label>Email Address</label>
+                        <p>ozonehighschool2@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-row-item">
+                    <span class="info-icon">🕒</span>
+                    <div class="info-text">
+                        <label>Office Hours</label>
+                        <p>Monday – Friday | 8:00 AM – 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Side: Premium Send a Message Card -->
+        <section class="form-side-card">
+            <h3>Send a Message</h3>
+            <p class="form-subtitle">Fill out the form below and our team will respond as soon as possible.</p>
+            
+            <form id="contact-form" action="send_message.php" method="POST">
+                <div class="contact-input-group">
+                    <label for="fullname">Full Name</label>
+                    <div class="contact-field-wrapper">
+                        <span class="field-icon-inner">👤</span>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+                    </div>
+                </div>
+
+                <div class="contact-input-group">
+                    <label for="email">Email Address</label>
+                    <div class="contact-field-wrapper">
+                        <span class="field-icon-inner">✉️</span>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+                    </div>
+                </div>
+
+                <div class="contact-input-group">
+                    <label for="subject">Subject</label>
+                    <div class="contact-field-wrapper">
+                        <span class="field-icon-inner">📌</span>
+                        <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
+                    </div>
+                </div>
+
+                <div class="contact-input-group">
+                    <label for="message">Message</label>
+                    <div class="contact-field-wrapper textarea-wrapper">
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit-contact">Send Message</button>
+            </form>
+        </section>
+    </div>
+</div>
+
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Ozone High School</h3>
+                   <!-- <p>Leading the way in digital education management.</p>-->
+                </div>
+               <!-- <div>
+                    <h4>Quick Links</h4>
+                    <a href="Staff.html">Staff Directory</a><br>
+                    <a href="Academic.html">Curriculum</a>
+                </div>-->
+            </div>
+            <hr>
+            <p class="copyright">&copy; 2026 Ozone High School. Built for Excellence.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

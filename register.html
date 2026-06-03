@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register | Ozone RMS</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo">Record <span>Management System</span></h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="About.html">About Us</a>
+                <a href="Staff.html">Staff</a>
+                <a href="contact.php">Contact Us</a>
+                <a href="login.html" class="btn-login-nav">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="auth-section">
+            <div class="auth-box">
+                <div class="info-card">
+                    <form id="register-form" class="auth-form" action="register.php" method="POST">
+                        <h2>Create an RMS Account</h2>
+                        <div class="input-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Enter username" required />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter email" required />
+                        </div>
+
+                        <div class="input-group">
+                            <label for="role">Role</label>
+                            <select id="role" name="role" required>
+                                <option value="" disabled selected>-- Select Role --</option>
+                                <option value="Admin">Admin</option>
+                                <option value="Teacher">Teacher</option>
+                                <option value="Parent">Parent</option>
+                                <option value="Student">Student</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter password" required />
+                        </div>
+
+                        <button type="submit" class="btn-primary">Register</button>
+                        <p style="text-align: center; margin-top: 1rem;">
+                            Already have an account? <a href="login.html" style="color: var(--primary); font-weight: 600;">Login here</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="theme.js"></script>
+</body>
+</html>
